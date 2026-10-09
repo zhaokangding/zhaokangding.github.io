@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="明媚的个人主页 —— 记录学习、思考与作品。" />
+  <title>明媚 | 个人主页</title>
+
+  <!-- 在 head 里先给 html 打上 js 标记，避免无 JS 时内容被隐藏 -->
+  <script>document.documentElement.className = 'js';</script>
+
+  <link rel="stylesheet" href="style.css" />
+  <!-- 可选：换成你自己的站点图标 -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>" />
+</head>
+<body>
+  <!-- ===== 顶部导航 ===== -->
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a class="nav-logo" href="#top">明媚<span class="logo-dot">.</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#top" class="nav-link">首页</a></li>
+        <li><a href="#about" class="nav-link">关于</a></li>
+        <li><a href="#projects" class="nav-link">项目</a></li>
+        <li><a href="#contact" class="nav-link">联系</a></li>
+        <li class="nav-theme">
+          <button class="theme-toggle" id="themeToggle" aria-label="切换明暗主题">🌙</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== 首屏 Hero ===== -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-avatar" aria-hidden="true">
+          <span>明</span>
+        </div>
+
+        <p class="hero-greeting reveal">👋 你好，我是</p>
+        <h1 class="hero-name reveal">明媚</h1>
+        <p class="hero-tagline reveal">在这里，记录我的学习、思考与作品。</p>
+        <p class="hero-sub reveal">
+          喜欢把想法变成作品，也喜欢安静地学习新东西。欢迎你来到这里。
+        </p>
+
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="#projects">看看我的项目</a>
+          <a class="btn btn-ghost" href="#contact">联系我</a>
+        </div>
+
+        <div class="hero-social reveal">
+          <!-- 换成你自己的链接 -->
+          <a class="social-link" href="https://github.com/zhaokangding" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor" aria-hidden="true">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </a>
+          <a class="social-link" href="mailto:915050524@qq.com" aria-label="邮箱">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m22 7-10 6L2 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 关于我 ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title reveal">关于我</h2>
+        <div class="about-grid reveal">
+          <div class="about-text">
+            <p>
+              你好，我是明媚。这里是我的个人主页，用来记录学习过程中的点滴，
+              分享一些作品和想法。
+            </p>
+            <p>
+              我对新事物保持好奇，喜欢动手实践。无论是写代码、做笔记，还是整理
+              知识，我都希望能把过程留下来，既方便自己回顾，也希望能对路过的人
+              有一点点帮助。
+            </p>
+            <p>
+              如果你对某个项目感兴趣，或者有想一起做的事情，欢迎随时联系我。
+            </p>
+          </div>
+
+          <ul class="about-facts">
+            <li class="fact">
+              <span class="fact-label">称呼</span>
+              <span class="fact-value">明媚</span>
+            </li>
+            <li class="fact">
+              <span class="fact-label">坐标</span>
+              <span class="fact-value">中国 · 待补充</span>
+            </li>
+            <li class="fact">
+              <span class="fact-label">在做</span>
+              <span class="fact-value">学习 / 写作 / 折腾小项目</span>
+            </li>
+            <li class="fact">
+              <span class="fact-label">联系</span>
+              <span class="fact-value"><a href="mailto:915050524@qq.com">915050524@qq.com</a></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 项目 / 作品 ===== -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal">项目与作品</h2>
+        <p class="section-sub reveal">一些正在做或做过的东西。下面的卡片都是示例，替换成你自己的内容即可。</p>
+
+        <div class="projects-grid">
+          <!-- 项目卡片 1 -->
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">📝</div>
+            <h3 class="card-title">个人博客</h3>
+            <p class="card-desc">记录日常生活与学习心得，偶尔写一些长文和随笔。</p>
+            <div class="card-tags">
+              <span class="tag">写作</span>
+              <span class="tag">生活</span>
+            </div>
+            <a class="card-link" href="#" aria-label="查看 个人博客">了解更多 →</a>
+          </article>
+
+          <!-- 项目卡片 2 -->
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">🗂️</div>
+            <h3 class="card-title">学习笔记</h3>
+            <p class="card-desc">整理课程、读书与自学的笔记，方便检索和复习。</p>
+            <div class="card-tags">
+              <span class="tag">笔记</span>
+              <span class="tag">知识管理</span>
+            </div>
+            <a class="card-link" href="#" aria-label="查看 学习笔记">了解更多 →</a>
+          </article>
+
+          <!-- 项目卡片 3 -->
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">🛠️</div>
+            <h3 class="card-title">开源小工具</h3>
+            <p class="card-desc">为解决日常小问题写的脚本和小程序。</p>
+            <div class="card-tags">
+              <span class="tag">编程</span>
+              <span class="tag">工具</span>
+            </div>
+            <a class="card-link" href="#" aria-label="查看 开源小工具">了解更多 →</a>
+          </article>
+
+          <!-- 项目卡片 4 -->
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">📚</div>
+            <h3 class="card-title">阅读书单</h3>
+            <p class="card-desc">记录读过的书，附上简短的读后感和推荐。</p>
+            <div class="card-tags">
+              <span class="tag">阅读</span>
+              <span class="tag">分享</span>
+            </div>
+            <a class="card-link" href="#" aria-label="查看 阅读书单">了解更多 →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 联系我 ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title reveal">联系我</h2>
+        <p class="section-sub reveal">有想聊的话题，或者想一起做点什么？欢迎通过下面的方式找到我。</p>
+
+        <div class="contact-grid reveal">
+          <a class="contact-card" href="mailto:915050524@qq.com">
+            <span class="contact-icon" aria-hidden="true">✉️</span>
+            <span class="contact-label">邮箱</span>
+            <span class="contact-value">915050524@qq.com</span>
+          </a>
+
+          <a class="contact-card" href="https://github.com/zhaokangding" target="_blank" rel="noopener">
+            <span class="contact-icon" aria-hidden="true">🐙</span>
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">@zhaokangding</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2025</span> 明媚 · 托管于 GitHub Pages</p>
+      <a href="#top" class="back-top" aria-label="回到顶部">↑ 回到顶部</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
